@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<title>Concepts Security</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1253" />
+<link rel="stylesheet" href="sk.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style7 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.style9 {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-family: "Times New Roman", Times, serif;
+}
+.style10 {font-size: 32px}
+-->
+</style>
+</head>
+<body>
+
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#3366CC">
+    <td colspan="2" rowspan="2" bgcolor="#537CBC"> <a href="index.html"><img src="../images/sk1_6logo.jpg" alt="Concepts Logo" width="166" height="50" hspace="20" border="0" /></a></td>
+    <td width="302" valign="bottom" bgcolor="#537CBC"><span class="style9"><span class="style10">C</span>ONCEPTS <span class="style10">S</span>ECURITY</span> </td>
+    <td height="63" colspan="3" align="center" valign="bottom" nowrap="nowrap" bgcolor="#537CBC" id="logo">&nbsp;</td>
+    <td width="4" bgcolor="#537CBC">&nbsp;</td>
+  </tr>
+
+  <tr bgcolor="#3366CC">
+    <td valign="top" bgcolor="#537CBC"><span class="style7">ΙΔΙΩΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΠΑΡΟΧΗΣ ΥΠΗΡΕΣΙΩΝ ΑΣΦΑΛΕΙΑΣ</span></td>
+    <td height="64" colspan="3" align="center" valign="top" bgcolor="#537CBC" id="tagline">&nbsp;</td>
+	<td width="4" bgcolor="#537CBC">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td colspan="7" bgcolor="#003366"><img src="mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+
+  <tr bgcolor="#CCFF99">
+  	<td height="25" colspan="7" bgcolor="#87BCE5" id="dateformat">&nbsp;&nbsp;
+    <script language="JavaScript" type="text/javascript">
+      // -- made by A1javascripts.com, please keep these credits when using this script
+      days = new Array(7)
+      days[1] = "Κυριακή";
+      days[2] = "Δευτέρα";
+      days[3] = "Τρίτη";
+      days[4] = "Τετάρτη";
+      days[5] = "Πέμπτη";
+      days[6] = "Παρασκευή";
+      days[7] = "Σάββατο";
+      months = new Array(12)
+      months[1] = "Ιανουάριος";
+      months[2] = "Φεβρουάριος";
+      months[3] = "Μάρτιος";
+      months[4] = "Απρίλιος";
+      months[5] = "Μάιος";
+      months[6] = "Ιούνιος";
+      months[7] = "Ιούλιος";
+      months[8] = "Αύγουστος";
+      months[9] = "Σεπτέμβριος";
+      months[10] = "Οκτώβριος";
+      months[11] = "Νοέμβριος";
+      months[12] = "Δεκέμβριος";
+      today = new Date(); day = days[today.getDay() + 1]
+      month = months[today.getMonth() + 1]
+      date = today.getDate()
+      year=today.getYear();
+      if (year < 2000)
+      year = year + 1900;
+      document.write ("<font size=-2 face='Arial, Helvetica, sans-serif' color=003399> "+ day +
+      ", " + month + " " + date + ", " + year + "</font>")
+      // -- end hiding
+      </script></td>
+  </tr>
+ <tr>
+    <td colspan="7" bgcolor="#003366"><img src="mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+  </tr>
+
+ <tr>
+    <td width="220" valign="top" bgcolor="#EBE9ED">
+	<table border="0" cellspacing="0" cellpadding="0" width="220" id="navigation">
+        <tr>
+          <td width="220">&nbsp;<br />
+		 &nbsp;<br /></td>
+        </tr>
+        <tr>
+          <td width="220"><a href="index.html" class="navText">Η Εταιρεία </a></td>
+        </tr>
+        <tr>
+          <td width="220"><a href="kse.html" class="navText">Κεντρικός Σταθμός Ελέγχου </a></td>
+        </tr>
+        <tr>
+          <td width="220"><a href="sfilaxi.html" class="navText">Στατική Φύλαξη </a></td>
+        </tr>
+        <tr>
+          <td width="220"><a href="filaxi.html" class="navText">Φυλάξεις</a></td>
+        </tr>
+        <tr>
+          <td width="220"><a href="peripolia.html" class="navText">Περιπολία</a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="prosopofilaxi.html" class="navText">Προσωποφύλαξη</a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="sasfaleias.html" class="navText">Συστήματα Ασφαλείας </a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="ssinagermou.html" class="navText">Συστήματα Συναγερμού </a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="spiranixnefsis.html" class="navText">Συστήματα Πυρανίχνευσης </a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="cctv.html" class="navText">Κλειστά Κυκλώματα Τηλεόρασης </a></td>
+        </tr>
+		<tr>
+          <td width="220"><a href="sprosbasis.html" class="navText">Συστήματα Πρόσβασης </a></td>
+        </tr>
+      </table>
+ 	 <br />
+  	&nbsp;<br />
+  	&nbsp;<br />
+  	&nbsp;<br /> 	</td>
+    <td width="50"><img src="mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+    <td colspan="2" valign="top"><img src="mm_spacer.gif" alt="" width="305" height="1" border="0" /><br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="500">
+        <tr>
+          <td class="pageName">Περιπολία</td>
+		</tr>
+
+		<tr>
+          <td class="bodyText"><p>   H  <strong>Concepts Security</strong> διαθέτει μια καλά εκπαιδευμένη ομάδα από ένστολους<br />
+φύλακες,  που κατα την διάρκεια της νύχτας περιπολούν προληπτικά στις<br />
+φυλασσόμενες  περιοχές και επεμβαίνουν άμεσα σε κάθε περίπτωση.</p>
+
+		    <p>Η  περιπολία των χώρων γίνεται σε μη τακτά χρονικά διαστήματα, βάσει ενός<br />
+		      εναλλασσόμενου  δρομολογίου. Το προσωπικό της <strong>Concepts Security</strong> προβαίνει<br />
+		      στις  κατάλληλες ενέργειες σε όλες τις παρακάτω περιπτώσεις:</p>
+		    <p>1)  Απόπειρα διαρρήξεων - διαρρήξεις<br />
+		      2)  Ληστείας - κλοπής<br />
+		      3)  Δολιοφθοράς<br />
+		      4)  Βανδαλισμού<br />
+		      5)  Πυρκαγιάς<br />
+		      6)  Ατυχημάτων<br />
+		      7) Υλικών  ζημιών</p>
+		    <p>Ο τακτικός  έλεγχος και η άμεση επέμβαση από τούς φύλακες και τα περιπολικά<br />
+		      της  <strong>Concepts Security</strong> είναι το ιδανικό συμπλήρωμα σε κάθε σύστημα<br />
+		      Συναγερμού.</p>
+		    <p>   </p>
+		    <p>&nbsp;</p>
+		    <p>&nbsp;</p>
+		    <p>&nbsp;</p>
+		    <p>&nbsp;</p></td>
+        </tr>
+      </table>
+     <br /></td>
+    <td width="50"><img src="mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+        <td width="190" valign="top"><br />
+		&nbsp;<br />
+		<table border="0" cellspacing="0" cellpadding="0" width="190">
+			<tr>
+			<td colspan="3" class="subHeader" align="center">&nbsp;</td>
+			</tr>
+
+			<tr>
+			<td width="40" height="268">&nbsp;</td>
+			<td width="110" id="sidebar" class="smallText"><div align="center">
+			  <p><img src="../images/sk5_1.jpg" width="154" height="101" border="1" /></p>
+			  <p><img src="../images/sk5_2.jpg" width="154" height="101" border="1" /></p>
+			  <p><img src="../images/sk5_3.jpg" width="154" height="101" border="1" /></p>
+			  <p><img src="../images/sk5_4.jpg" width="154" height="97" border="1" /></p>
+			  <p>&nbsp;</p>
+			  <p><br />
+			    <br />			
+		      </p>
+			  </div></td>
+			<td width="40">&nbsp;</td>
+			</tr>
+	</table>	</td>
+	<td width="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" bordercolor="#000000" bgcolor="#87bce5"><div align="center">- <a href="index.html">Αρχική Σελίδα</a> - <a href="contact.html">Επικοινωνία</a> -</div></td>
+    <td width="4">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
